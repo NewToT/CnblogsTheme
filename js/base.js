@@ -210,24 +210,14 @@ function Base() {
     this.setHitokoto = function() {
 
         var topTitleList = [
-            '每一个不曾起舞的日子，都是对生命的辜负。',
-            '公主死去了，屠龙的少年还在燃烧',
-            '我们听过无数的道理，却仍旧过不好这一生。',
-            '生如夏花之绚烂，死如秋叶之静美。',
-            '但凡不能杀死你的，最终都会使你更强大。',
-            '好看的皮囊千篇一律，有趣的灵魂万里挑一。',
-            '青春是一本太仓促的书，我们含着泪，一读再读。',
-            '教育就是当一个人把在学校所学全部忘光之后剩下的东西。',
-            '孤独不是一种脾性，而是一种无奈。',
-            '有时候你以为天要塌下来了，其实是自己站歪了。',
-            '温柔正确的人总是难以生存，因为这世界既不温柔，也不正确。',
-            '死并非生的对立面，而作为生的一部分永存。',
-            '不要努力成为一个成功者，要努力成为一个有价值的人。',
-            '不要因为走得太远，忘了我们为什么出发。',
-            '你的问题主要在于读书不多而想得太多。',
-            '岁月不饶人，我亦未曾饶过岁月。',
-            '当你凝视深渊时，深渊也在凝视着你。',
-            '有的人25岁就死了，只是到75岁才埋葬'
+      
+            '只能冷暖自知，',
+            '再自知，',
+            '再自知，',
+            '自知到灵魂的深处去孑然独立，',
+            '在这漫长的路途中一直跑下去，',
+            '跑向无谓的投奔。'
+        
         ];
 
         var settings = {
@@ -277,7 +267,7 @@ function Base() {
      */
     this.setNotHomeTopImg = function() {
         $('.main-header').css('height', '40vh');
-        $('.main-header').css('background', '#222 url(https://wallpapers.wallhaven.cc/wallpapers/full/wallhaven-569548.png)  center center no-repeat');
+        $('.main-header').css('background', '#222 url(https://www.cnblogs.com/images/cnblogs_com/Fuxking4wesome/1303991/o_737463.png)  center center no-repeat');
         $('.main-header').css('background-size', 'cover');
         $('.vertical').css('display', 'none');
         $('.scroll-down').css('display', 'none');
@@ -509,7 +499,7 @@ function Base() {
     this.addWebPv = function() {
         var pvHtml =  '<i class="iconfont icon-odps-data cnzz" style="position: relative;top: 2px;left: 3px;cursor: pointer;"></i>';
         pvHtml += '<span id="amazingStatSpan"></span>';
-        pvHtml += '<div>【事实并非理所当然<span id="footerTextIcon">❤️</span>世界总是欲盖弥彰】</div>';
+        pvHtml += '<div>【诸行皆可<span id="footerTextIcon">※</span>无物为真】</div>';
         pvHtml += "<div><span id='blogRunTimeSpan'></span><span class='my-face'>ღゝ◡╹)ノ♡</span></div>";
         pvHtml += '<div id="cnzzInfo"></div>';
         $('#footer').append(pvHtml);
@@ -530,29 +520,10 @@ function Base() {
         $('#blogRunTimeSpan').text('This blog has running : '+runDate.daysold+' d '+runDate.hrsold+' h '+runDate.minsold+' m '+runDate.seconds+' s');
     };
     this.setCnzz = function() {
-        // 请去 CNZZ 配置自己的，谢谢！！
-        var cnzzStat = $('.id_cnzz_stat_icon a');
-        if (cnzzStat.length > 0) {
-            var cnzzInfo = [];
-            var cnzzArr  = $(cnzzStat[1]).text().split('|');
-            $.each(cnzzArr, function (i) {
-                var str = $.trim(cnzzArr[i]);
-                if (str != '') {
-                    str = str.replace('今日','Today').replace('昨日','Yesterday').replace('[',':').replace(']','');
-                    cnzzInfo.push(str)
-                }
-            });
-            cnzzInfo.push($(cnzzStat[2]).text().replace('当前在线','Online').replace('[',':').replace(']',''));
-            $('#cnzzInfo').text(cnzzInfo.join(' | '));
-            window.clearInterval(setCnzzTId);
-        }
+     
     };
     this.setAmazing = function () {
-        // 请去 AmazingCounters.com 配置自己的，谢谢！！
-        if ($('#amazingStat').length > 0) {
-            $('#amazingStat').appendTo('#amazingStatSpan').show();
-            window.clearInterval(setAmazingTId);
-        }
+      
     };
     this.setTheme = function () {
         $('#footer').prepend('<div class="footer-image"></div>');

@@ -1,5 +1,5 @@
 function myTools() {
-    var bndongTools = this;
+    var Fuxking4wesomeTools = this;
     var colors      = {
         "gray": "color: #1B2B34;font-size: 12px; line-height: 18px;",
         "red": "color: #EC5f67;font-size: 12px; line-height: 18px;",
@@ -37,14 +37,14 @@ function myTools() {
                 var colorList = [colors.red, colors.orange, colors.yellow, colors.green, colors.teal, colors.blue, colors.purple, colors.brown];
                 $.each(list, function (i) {
                     var str = list[i];
-                    var ind = bndongTools.randomNum(0, colorList.length - 1);
+                    var ind = Fuxking4wesomeTools.randomNum(0, colorList.length - 1);
                     console.log('%c'+str, colorList[ind]);
                 });
                 break;
             case 'banner':
-                console.log('\n' + ' %c BNDong CNBlogs %c https://www.cnblogs.com/bndong ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c BNDong GitHub %c https://github.com/BNDong ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c BNDong Email %c dbuo@foxmail.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c Fuxking4wesome CNBlogs %c https://www.cnblogs.com/Fuxking4wesome ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c Fuxking4wesome GitHub %c https://github.com/Fuxking4wesome ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c Fuxking4wesome Email %c dbuo@foxmail.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
                 break;
 
             default:
