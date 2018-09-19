@@ -128,7 +128,7 @@ function Base() {
             if (document[hidden]) {
                 $('#myTopCanvas').hide();
                 var str = $('.main-header-content h1').eq(0).text();
-                document.title = '  Hi, ' + (str != '' ? str : '八稻') + ' - ' + RelTitle.split(' - ')[0];
+                document.title = '  Hi' 
             } else {
                 $('#myTopCanvas').fadeIn(3000);
                 document.title = RelTitle;
