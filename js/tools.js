@@ -42,9 +42,9 @@ function myTools() {
                 });
                 break;
             case 'banner':
-                console.log('\n' + ' %c Fuxking4wesome CNBlogs %c https://www.cnblogs.com/Fuxking4wesome ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c Fuxking4wesome GitHub %c https://github.com/Fuxking4wesome ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
-                console.log('\n' + ' %c Fuxking4wesome Email %c dbuo@foxmail.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c Fuxking4wesome CNBlogs %c http://www.cnblogs.com/WeirdRomance/' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c Fuxking4wesome GitHub %c https://github.com/NewToT/ ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
+                console.log('\n' + ' %c Fuxking4wesome Email %c wrlink@163.com ' + '\n', 'color: #fadfa3; background: #030307; padding:5px 0;', 'background: #fadfa3; padding:5px 0;');
                 break;
 
             default:
